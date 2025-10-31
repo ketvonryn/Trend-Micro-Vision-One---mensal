@@ -23,6 +23,7 @@ Coleta relatórios (ZIP) e dados via API do Vision One, consolida tudo em um Exc
 ---
 
 ## Pré-requisitos
+RODAR .EXE:
 - **Internet** para chamadas à API do Vision One.
 - Pasta de trabalho contendo:
   - o executavel
@@ -30,6 +31,14 @@ Coleta relatórios (ZIP) e dados via API do Vision One, consolida tudo em um Exc
   - **Relatórios ZIP** do Vision One (baixados pelo schedule report e salvos na pasta de forma autoamtica pelo Power automate ou manualmente)
 - **Permissão de escrita** na pasta (para o exe)
 - liberação do .exe no antivirus
+SE FOR RODAR VIA PYTHON (codigo puro), precisa das seguintes bibliotecas:
+Python
+pandas
+openpyxl
+xlsxwriter
+python-dotenv
+requests
+python-dateutil
 
 ---
 
@@ -48,3 +57,4 @@ token=SEU_TOKEN_AQUI
 
 # pasta (opcional)
 pasta=
+
