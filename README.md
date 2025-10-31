@@ -5,7 +5,7 @@ Coleta relatórios (ZIP) e dados via API do Vision One, consolida tudo em um Exc
 ---
 
 ## Sumário
-- [Como funciona o fluxo Principal]
+- [Como funciona o fluxo Principal](#como-funciona-o-fluxo-principal)
 - [Pré-requisitos](#pré-requisitos)
 - [Configuração (.env)](#configuração-env)
 
@@ -32,7 +32,8 @@ RODAR .exe:
 - **Permissão de escrita** na pasta (para o exe)
 - liberação do .exe no antivirus
   
-RODAR VIA PYTHON (codigo puro), precisa das seguintes bibliotecas:
+RODAR VIA PYTHON (codigo puro):
+precisa das seguintes bibliotecas, além dos itens acima
 - Python
 - pandas
 - openpyxl
@@ -56,8 +57,9 @@ cliente=nome
 # Token de API (perfil auditor)
 token=SEU_TOKEN_AQUI
 
-# pasta (opcional)
+# pasta (opcional) 
 pasta=
+
 
 
 
