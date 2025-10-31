@@ -23,14 +23,15 @@ Coleta relatórios (ZIP) e dados via API do Vision One, consolida tudo em um Exc
 ---
 
 ## Pré-requisitos
-RODAR .exe:
+RODAR BookV1.exe:
 - **Internet** para chamadas à API do Vision One.
 - Pasta de trabalho contendo:
   - o executavel
   - `.env` (variáveis locais com as chaves de API)
   - **Relatórios ZIP** do Vision One (baixados pelo schedule report e salvos na pasta de forma autoamtica pelo Power automate ou manualmente)
 - **Permissão de escrita** na pasta (para o exe)
-- liberação do .exe no antivirus
+- os arquivos zip, especialmente o excel, não podem estar abertos enquanto o executável esta rodando.
+- liberação do .exe no antivirus (se necessário)
   
 RODAR VIA PYTHON (codigo puro):
 precisa das seguintes bibliotecas, além dos itens acima
@@ -59,6 +60,7 @@ token=SEU_TOKEN_AQUI
 
 # pasta (opcional) 
 pasta=
+
 
 
 
