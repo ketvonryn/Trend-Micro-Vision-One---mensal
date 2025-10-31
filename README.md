@@ -5,13 +5,13 @@ Coleta relatórios (ZIP) e dados via API do Vision One, consolida tudo em um Exc
 ---
 
 ## Sumário
-- [Como funciona (fluxo)](#como-funciona-fluxo)
+- [Como funciona o fluxo Principal]
 - [Pré-requisitos](#pré-requisitos)
 - [Configuração (.env)](#configuração-env)
 
 ---
 
-## Como funciona o Main (fluxo Principal)
+## Como funciona o fluxo Principal
 1. Inicializa **logging** e abre a **interface gráfica** (janela com área de logs).
 2. Calcula a **`data_ref`** (sempre **1º dia do mês anterior**).
 3. Cria o Excel **`{cliente}_base_dados_{data_ref}.xlsx`** (abas vazias).
@@ -57,4 +57,5 @@ token=SEU_TOKEN_AQUI
 
 # pasta (opcional)
 pasta=
+
 
