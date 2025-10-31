@@ -1,0 +1,10 @@
+.env
+*.log 
+*.xlsx
+*.zip
+*.spec
+Arquivos/**
+logs/**
+dist/**
+build/**
+_pycache_/**
