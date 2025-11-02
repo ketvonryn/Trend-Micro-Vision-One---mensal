@@ -56,7 +56,7 @@ def coletaZip_indices(pasta, arquivo_excel, cliente, data_ref=data_ref):
     dados["risk"] = extrai_indicador(pasta,"*Risk*.zip", "Cyber Risk Index", "Your company")
     dados["exposure"] = extrai_indicador(pasta,"*Exposure*.zip", "Exposure Index", "Your company")
     dados["attack"] = extrai_indicador(pasta,"*Attack*.zip", "AttackIndex", "Your company")
-    dados["security"] = extrai_indicador(pasta,"*Security_Configuration*.zip", "Security Configuration Index", "Your organization")
+    dados["security"] = extrai_indicador(pasta,"*Security*Configuration*.zip", "Security Configuration Index", "Your organization")
 
     # Salva no arquivo Excel
     nome_aba = "Indices"
@@ -68,4 +68,5 @@ def coletaZip_indices(pasta, arquivo_excel, cliente, data_ref=data_ref):
 
     except Exception as e:
         print(f"[ERRO] Falha ao salvar no Excel: {e}")
+
         return None
