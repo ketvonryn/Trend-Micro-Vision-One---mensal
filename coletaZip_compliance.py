@@ -19,7 +19,7 @@ def coletaZip_compliance(pasta, aba):
         return f"[ERRO] Aba '{aba}' inválida. Use 'Compliance SWP' ou 'Compliance SEP'."
 
     # Localiza o arquivo ZIP alvo
-    padrao_zip = "*Security_Configuration*.zip"
+    padrao_zip = "*Security*Configuration*.zip"
     try:
         caminho_zip = glob.glob(os.path.join(pasta, padrao_zip))[0]
     except IndexError:

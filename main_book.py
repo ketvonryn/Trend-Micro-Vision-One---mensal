@@ -21,6 +21,7 @@ token = os.getenv("token")
 
 # registrador de logs ------------------------------------------------------
 
+
 class Tee:
     def __init__(self, *streams):
         self.streams = [s for s in streams if s is not None]
